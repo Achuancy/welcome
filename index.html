@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><h3>user validation</h3></head>
+<script>
+	function validationForm()
+	{
+		let x=document.forms["myform"]["Pass"].value;
+		let y=document.forms["myform"]["Password"].value;
+		if(x==y)
+		{
+			alert("password matched")
+		}
+		else
+		{
+			alert("password not matched")
+		}
+	}
+</script>
+
+<body>
+	
+<form name="myform"  onsubmit="return validationForm()" method="post">
+	Username:<input type="text" name="uname">
+	Password:<input type="password" name="Pass">
+	Repeat password:<input type="password" name="Password">
+	<input type="submit" value="submit">
+</form>
+</body>
+
+</html>
